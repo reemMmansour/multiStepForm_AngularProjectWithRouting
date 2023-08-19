@@ -1,0 +1,14 @@
+<!-- <p>your-personal-info works!</p> -->
+<h1>Personal info</h1>
+<p>Please provide your name, email address, and phone number.</p>
+<div class="form">
+  <form action="index.html" target="_self" [formGroup]="reactiveForm">
+    <label for="name">Name</label>
+    <input type="text" placeholder="e.g. Stephen King" id="name" formControlName="fallname" />
+    <label for="email">Email Address</label>
+    <input type="email" placeholder="e.g. stephenking@gmail.com" id="email" formControlName="email" />
+    <small *ngIf="!reactiveForm.get('email').valid && reactiveForm.get('email').touched">Email is required is not valid</small>
+    <label for="phone-num">Phone Number</label>
+    <input type="text" placeholder="e.g. +1 234 567 890" id="phone-num" formControlName="phonenumber" />
+  </form>
+</div>

@@ -1,0 +1,120 @@
+/* ********************************* */
+/* ********************************* */
+
+.container {
+  width: 50rem;
+  height: 30rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 13px 13px 30px -20px;
+}
+
+.left-side {
+  padding: 2rem 0 0 4.2rem;
+  background-image: url(src\assets\images\bg-sidebar-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right-side {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.your-information {
+  width: 28rem;
+  height: 20rem;
+  margin-top: 0;
+  position: absolute;
+  top: 1.5rem;
+}
+
+/* ****************************************************** */
+/* ****************[ SideBar - Left Side]**************** */
+
+ul.step {
+  height: 15rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.step li a::before {
+  content: counter(counter-num);
+  position: absolute;
+  left: -2.5rem;
+  top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem white solid;
+  border-radius: 50%;
+  font-size: small;
+}
+
+.active a::before {
+  font-weight: bold;
+  color: var(--Marine-blue);
+  background-color: var(--Light-blue);
+}
+
+.step li {
+  counter-increment: counter-num;
+}
+.step li a {
+  position: relative;
+  color: var(--Pastel-blue);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.step li a span {
+  display: block;
+  color: var(--White);
+  font-weight: 500;
+}
+
+/* ****************[ Next And Back Button ]**************** */
+
+.button-container {
+  width: 28rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+button.next {
+  border-radius: 0.3rem;
+  color: var(--White);
+  background-color: var(--Marine-blue);
+}
+
+button.back {
+  color: var(--Marine-blue);
+  background-color: var(--White);
+  text-align: start;
+}
+
+button {
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  /* pointer-events: painted; */
+}

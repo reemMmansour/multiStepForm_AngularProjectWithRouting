@@ -1,0 +1,24 @@
+<!-- <p>your-plan works!</p> -->
+<h1>Select your plan</h1>
+<p>you have the option of monthly or yearly billing.</p>
+<div class="pilling">
+  <div *ngFor="let ele of monthArray">
+    <div class="option-of-pilling" [ngClass]="{'active':ele.isActive}" (click)="optionOfPilling(ele)">
+      <img src="{{ele.image}}" alt="" />
+      <p>Arcade </p>
+      <!-- monthly -->
+      <p [hidden]="hiddenElement"><span>${{ele.month}}mo</span></p>
+      <!-- yearly -->
+      <p [hidden]="!hiddenElement"><span>$90/yr</span>2 months free</p>
+    </div>
+  </div>
+</div>
+<div class="monthly-yearly">
+  <label for="monthyear">monthly</label>
+  <input type="range" id="monthyear" name="month-year" class="slider" min="0" max="1" value="0" step="1"
+    (change)="onChangeFunction($event)" />
+  <label for="monthyear">yearly</label>
+</div>
+<!-- <div class="option-of-pilling" [ngClass]="{'active': isActive}" (click)="optionOfPilling(isActive)"> -->
+<!-- <div class="option-of-pilling" [ngClass]="active" (click)="optionOfPilling($event)"> -->
+<!-- <div class="option-of-pilling" [ngClass]="{'active': ele.isActive}" (click)="optionOfPilling(ele)"> -->

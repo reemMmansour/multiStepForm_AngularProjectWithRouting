@@ -1,0 +1,21 @@
+/* ********************************** */
+/* ********************************** */
+
+.form label {
+  display: block;
+  margin: 1.2rem 0 0.3rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Marine-blue);
+}
+.form input {
+  width: 28rem;
+  height: 2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 0.3rem;
+}
+.form small {
+  color: red;
+  margin-top: 0.3rem;
+}

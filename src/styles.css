@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  /* ## Colors */
+  /* ### Primary */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+
+  /* ### Neutral */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0rem;
+  background-color: var(--Magnolia);
+  font-size: 16px;
+  /* width: 1440px; */
+  font-family: "DynaPuff", cursive;
+  font-family: "Epilogue", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: var(--Marine-blue);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 1.5rem;
+  color: var(--Cool-gray);
+}

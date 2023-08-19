@@ -1,0 +1,23 @@
+.add-ons {
+  display: flex;
+  align-items: center;
+  width: 28rem;
+  height: 3.6rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid var(--Marine-blue);
+  border-radius: 0.4rem;
+}
+.add-ons label {
+  width: 20rem;
+  margin-left: 1rem;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--Purplish-blue);
+}
+.add-ons label span {
+  display: block;
+}
+.add-ons strong {
+  color: var(--Purplish-blue);
+}

@@ -1,0 +1,32 @@
+.arcade-div p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--Marine-blue);
+}
+.double-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28rem;
+  /* height: 3.6rem; */
+}
+.monthly-yearly,
+/* .service-storage, */
+.total-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.arcade-div,
+.service-storage {
+  display: flex;
+  flex-direction: column;
+}
+/* .service-storage{
+
+} */
+
+.total p {
+  display: inline;
+}
